@@ -1,0 +1,16 @@
+[package]
+name = "slime_cave"
+version = "0.1.0"
+edition = "2024"
+default-run = "slime_cave"
+
+[dependencies]
+font8x8 = "0.3"
+macroquad = "0.4"
+png = "0.17"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
